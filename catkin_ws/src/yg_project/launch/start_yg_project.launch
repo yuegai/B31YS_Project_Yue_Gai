@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find yg_project)/launch/yg_gmapping.launch"/>
+  <include file="$(find yg_project)/launch/yg_move_base.launch"/> 
+  <include file="$(find yg_project)/launch/yg_explore_costmap.launch"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot_rviz_launchers)/rviz/navigation.rviz"/>
+
+</launch>
